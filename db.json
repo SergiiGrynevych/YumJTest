@@ -1,3 +1,6 @@
 {
-
+  "users": [
+    {"id":1,"fullName":"Tom","username":"26"},
+    {"id":2,"fullName":"Alice","username":"31"}
+  ]
 }

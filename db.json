@@ -1,1 +1,13 @@
-{"users":{"id":1,"fullName":"Tom","username":"26"}}
+{
+    "users":
+        [{
+            "id":1,
+            "fullName":"Tom",
+            "username":"26"
+        },
+        {
+            "id":33,
+            "fullName":"Tom33",
+            "username":"2633"
+        }]
+}

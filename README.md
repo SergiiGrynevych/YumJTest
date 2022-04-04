@@ -69,3 +69,12 @@ DeletePost
 - Method: DELETE;
 - Url: posts/[id];
 - Delete post by Id. If post not found return Not Found response. If deleted - return No Content;
+
+
+# Solution:
+Implemented controllers:
+- UserController, which implements all the logic for working with the user table
+- PostsController, which implements all the logic for working with the posts table
+- DBInitController, which implements all the logic for creating tables: users and posts
+Folder "Controllers" have class AdditionalProcessing with basic logic
+Folder "Models" have all basic classes needed at work

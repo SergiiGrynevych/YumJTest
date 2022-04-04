@@ -7,67 +7,65 @@ Recommendations:
 .NET 6, Dapper, Postman, MSSQL.
 DB structure:
 Table Users:
-	Id;
-	FullName;
-	Username;
-	Phone;
-	Website;
-	Street;
-	Suite;
-	City;
-	Zipcode;
+Id;
+- FullName;
+- Username;
+- Phone;
+- Website;
+- Street;
+- Suite;
+- City;
+- Zipcode;
 
 Table Posts:
-	Id;
-	UserId;
-	Title;
-	Body;
+- Id;
+- UserId;
+- Title;
+- Body;
 
 API endpoints:
 DBInit
-	Method: POST;
-	Url: init/;
-	Create tables Users and Posts;
+- Method: POST;
+- Url: init/;
+- Create tables Users and Posts;
 
 CreateUser
-	Method: POST;
-	Url: users/[id];
-	Make request to endpoint: https://jsonplaceholder.typicode.com/users and se-lect user by Id; Save this user to table users return success response. If user with this Id already exists - return response as BadRequest with some message;
-
-
+- Method: POST;
+- Url: users/[id];
+- Make request to endpoint: https://jsonplaceholder.typicode.com/users and se-lect user by Id; Save this user to table users return success response. If user with this Id already exists - return response as BadRequest with some message;
 
 GetUser
-	Method: GET;
-	Url: users/[id];
-	Get user object from table by Id. Return success response with user object; If user not found, return response NotFound;
+- Method: GET;
+- Url: users/[id];
+- Get user object from table by Id. Return success response with user object; If user not found, return response NotFound;
 
 DeleteUser
-	Method: DELETE;
-	Url: users/[id];
-	Delete user from table by Id. Return success response with NoContent.  If user not found, return response NotFound;
+- Method: DELETE;
+- Url: users/[id];
+- Delete user from table by Id. Return success response with NoContent.  If user not found, return response NotFound;
 
 CreatePost
-	Method: POST;
-	Url: posts/[userId]/[id]
-	Make request to endpoint: https://jsonplaceholder.typicode.com/posts and se-lect post by Id; Insert into Posts with UserId. If post with this Id already exists - return response BadRequest with message. Otherwise - return success re-sponse.
+- Method: POST;
+- Url: posts/[userId]/[id]
+- Make request to endpoint: https://jsonplaceholder.typicode.com/posts and se-lect post by Id; Insert into Posts with UserId. If post with this Id already exists - return response BadRequest with message. Otherwise - return success re-sponse.
 
 GetUserPosts
-	Method: GET;
-	Url: posts/[userId];
-	Get list of posts by UserId. Return success response with list of posts;
+- Method: GET;
+- Url: posts/[userId];
+- Get list of posts by UserId. Return success response with list of posts;
 
 GetPost
-	Method: GET;
-	Url: posts/[id];
-	Get post by Id; If post is not found - return Not Found response;
+- Method: GET;
+- Url: posts/[id];
+- Get post by Id; If post is not found - return Not Found response;
 
 UpdatePost
-	Method: PUT;
-	Url: posts/[id];
-	Params: title, body
-	Update title and body for post by Id. If post not found return Not Found re-sponse. If updated - return No Content;
+- Method: PUT;
+- Url: posts/[id];
+- Params: title, body
+- Update title and body for post by Id. If post not found return Not Found re-sponse. If updated - return No Content;
 
 DeletePost
-	Method: DELETE;
-	Url: posts/[id];
-	Delete post by Id. If post not found return Not Found response. If deleted - return No Content;
+- Method: DELETE;
+- Url: posts/[id];
+- Delete post by Id. If post not found return Not Found response. If deleted - return No Content;

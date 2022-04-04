@@ -1,16 +1,26 @@
 # YumJTest
 
+# Solution:
+Implemented controllers:
+- UserController, which implements all the logic for working with the user table
+- PostsController, which implements all the logic for working with the posts table
+- DBInitController, which implements all the logic for creating tables: users and posts
+Folder "Controllers" have class AdditionalProcessing with basic logic
+Folder "Models" have all basic classes needed at work
+
+
 # Task:
 Test Project
 Create Web API integrated with https://jsonplaceholder.typicode.com/.
 Recommendations:
 .NET 6, Dapper, Postman, MSSQL.
+
 DB structure:
 Table Users:
-- Id; - FullName; - Username; - Phone; - Website; - Street; - Suite; - City; - Zipcode;
+ - Id; - FullName; - Username; - Phone; - Website; - Street; - Suite; - City; - Zipcode;
 
 Table Posts:
-- Id; - UserId; - Title; - Body;
+ - Id; - UserId; - Title; - Body;
 
 API endpoints:
 DBInit
@@ -58,12 +68,3 @@ DeletePost
 - Method: DELETE;
 - Url: posts/[id];
 - Delete post by Id. If post not found return Not Found response. If deleted - return No Content;
-
-
-# Solution:
-Implemented controllers:
-- UserController, which implements all the logic for working with the user table
-- PostsController, which implements all the logic for working with the posts table
-- DBInitController, which implements all the logic for creating tables: users and posts
-Folder "Controllers" have class AdditionalProcessing with basic logic
-Folder "Models" have all basic classes needed at work

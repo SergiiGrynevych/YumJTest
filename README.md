@@ -1,27 +1,16 @@
 # YumJTest
 
-
+# Task:
 Test Project
 Create Web API integrated with https://jsonplaceholder.typicode.com/.
 Recommendations:
 .NET 6, Dapper, Postman, MSSQL.
 DB structure:
 Table Users:
-Id;
-- FullName;
-- Username;
-- Phone;
-- Website;
-- Street;
-- Suite;
-- City;
-- Zipcode;
+- Id; - FullName; - Username; - Phone; - Website; - Street; - Suite; - City; - Zipcode;
 
 Table Posts:
-- Id;
-- UserId;
-- Title;
-- Body;
+- Id; - UserId; - Title; - Body;
 
 API endpoints:
 DBInit

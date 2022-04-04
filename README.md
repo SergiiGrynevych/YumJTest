@@ -16,6 +16,7 @@ Recommendations:
 .NET 6, Dapper, Postman, MSSQL.
 
 DB structure:
+
 Table Users:
  - Id; - FullName; - Username; - Phone; - Website; - Street; - Suite; - City; - Zipcode;
 

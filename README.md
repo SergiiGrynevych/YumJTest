@@ -7,6 +7,7 @@ Implemented controllers:
 - DBInitController, which implements all the logic for creating tables: users and posts
 
 Folder "Controllers" have class AdditionalProcessing with basic logic
+
 Folder "Models" have all basic classes needed at work
 
 
